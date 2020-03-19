@@ -139,5 +139,25 @@
     <script src="./js/cms.js"></script>
     <!-- Config -->
     <script src="./js/config.js"></script>
+<script>
+    var blog = new CMS({
+      elementId: 'cms',
+      mode: 'GITHUB',
+      github: {
+        username: 'chrisdiana',
+        repo: 'cms.js-themes',
+        branch: 'master',
+        host: 'https://api.github.com',
+        prefix: 'templates',
+      },
+      layoutDirectory: 'layouts/bootstrap-blog',
+      errorLayout: 'error',
+      defaultView: 'posts',
+      types: [
+        { name: 'posts', layout: { list: 'post-list', single: 'post' }},
+        { name: 'pages', layout: { list: 'page-list', single: 'page' }},
+      ],
+    });
+    </script>
 </body>
 </html>
