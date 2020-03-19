@@ -4,9 +4,9 @@
     <%= data.title %>
   </h2>
   <div class="entry-meta">
-  <% if(post.date) { %>
+  <% if(data.date) { %>
     <time class="post-date">
-      投稿日:<span><%= post.date %>投稿者:<%= post.author %></span>
+      投稿日:<span><%= data.date %>投稿者:<%= data.author %></span>
     </time>
   <% } %>
   </div>
