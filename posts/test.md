@@ -2,7 +2,7 @@
 layout: post
 title: テストだよ
 excerpt:テストだよーん
-tags: テスト
+tags: テスト,あほあほ
 date: 2018-03-01
 year:2020
 month:03
