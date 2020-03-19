@@ -6,7 +6,9 @@
         <h2 class="entry-title">
           <a href="<%= post.permalink %>"><%= post.title %></a>
         </h2>
-        <time class="post-date">投稿日:<span><%= data.date %></div></time>
+        <% if(data.date) { %>
+        <time class="post-date">投稿日:<span><%= data.date %></span></time>
+        <% } %>
         </div>
         <div class="entry-content">
           <% if(post.excerpt) { %>
