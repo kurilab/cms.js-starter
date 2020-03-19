@@ -3,11 +3,13 @@
   <h2 class="entry-title">
     <%= data.title %>
   </h2>
+  <div class="entry-meta">
   <% if(data.date) { %>
     <time class="post-date">
       <span><%= data.date %></span>
     </time>
   <% } %>
+  </div>
   <div class="post-tags">
     <% if(data.tags) { %>
       <% data.tags.forEach(function(tag) { %>
@@ -17,7 +19,7 @@
       <% }) %>
     <% } %>
   </div>
-  <div class="post-content">
+  <div class="entry-content">
     <%= data.body %>
   </div>
 </article>
