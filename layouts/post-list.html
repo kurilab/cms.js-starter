@@ -6,9 +6,9 @@
         <h2 class="entry-title">
           <a href="<%= post.permalink %>"><%= post.title %></a>
         </h2>
-        <% if(data.date) { %>
+        <% if(post.date) { %>
         <div class="entry-meta">
-        <time class="post-date">投稿日:<span><%= data.date %></span>投稿者:<%= post.author %></time>
+        <time class="post-date">投稿日:<span><%= post.date %></span>投稿者:<%= post.author %></time>
         </div>
         <% } %>
         <div class="entry-content">
